@@ -45,7 +45,26 @@ ol {
 img {
   display: block;
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 /* =============== HEADER ================== */
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
 
 .navigation-link {
   font-weight: 500;
@@ -55,10 +74,25 @@ img {
   color: var(--accent-text-color);
 }
 
+.navigation-list {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.list {
+  display: flex;
+  padding-top: 94;
+  padding-bottom: 94;
+}
+
 .navigation-link:hover,
 .navigation-link:focus {
   background-color: var(--color-white);
   color: var(--accent-color);
+}
+
+.navigation-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .tel-link {
@@ -67,6 +101,11 @@ img {
   line-height: 1.1;
   letter-spacing: 0.02em;
   color: var(--accent-too-color);
+  margin-right: auto;
+}
+
+.tel-list {
+  display: flex;
 }
 
 .tel-link:hover,
@@ -82,6 +121,7 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-text-color);
+  margin-right: 93px;
 }
 
 .logo-web {
@@ -93,15 +133,32 @@ img {
 }
 
 .header {
-  background-color: #ffffff;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
+
+.header .container {
+  background-color: gray;
+  display: flex;
+  align-items: center;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1170px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
 }
+
+.hero {
+  color: var(--color-white);
+  background: #2f303a;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
 /* =============== AND HEADER ================== */
 
 /* ================ COMPONENTS ================= */
@@ -123,10 +180,12 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-
-  color: var(--color-white);
-  background: #2f303a;
+  padding-left: 252px;
+  padding-right: 252px;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
+
 /*---- .navigation-link .link.current {
   color: var(--accent-color);
 } ---*/
@@ -216,6 +275,10 @@ img {
 
 /* =============== Portfolio ============== */
 .content-btn {
+  border-radius: 4px;
+  padding: 6px 22px;
+  display: inline-block;
+  min-width: 73px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -244,20 +307,6 @@ img {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--accent-too-color);
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 /* =========== And Portfolio ============== */
