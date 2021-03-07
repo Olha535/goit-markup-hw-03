@@ -5,6 +5,7 @@
   --accent-text-color: #212121;
   --accent-too-color: #757575;
   --color-white: #ffffff;
+  --card-set-gap: 30px;
 }
 
 body {
@@ -44,6 +45,7 @@ ol {
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 .visually-hidden {
@@ -144,8 +146,6 @@ img {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  display: flex;
-  align-items: center;
 }
 
 .hero {
@@ -154,6 +154,15 @@ img {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+}
+.line {
+  position: absolute;
+  width: 1600px;
+  height: 0px;
+  left: 0px;
+  top: 80px;
+
+  border: 1px solid #ececec;
 }
 
 /* =============== AND HEADER ================== */
@@ -168,7 +177,6 @@ img {
   cursor: pointer;
   background-color: var(--accent-color);
   color: var(--color-white);
-  min-width: ;
 }
 
 .main-heading {
@@ -178,10 +186,9 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  padding-left: 252px;
-  padding-right: 252px;
   margin: 0 auto;
   margin-bottom: 30px;
+  max-width: 696px;
 }
 
 /*---- .navigation-link .link.current {
@@ -198,6 +205,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.03em;
   color: var(--accent-text-color);
+  margin-bottom: 10px;
 }
 
 .features-text {
@@ -218,6 +226,10 @@ img {
 .fio {
   margin-top: 30px;
   margin-bottom: 10px;
+}
+
+.styless {
+  display: flex;
 }
 
 /* =============== AND FEATURES ================= */
@@ -261,6 +273,15 @@ img {
 }
 .block {
   padding-top: 47px;
+}
+
+.picture-fon {
+  display: flex;
+  background: #ffffff;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 /* =============== FUTTER ================= */
@@ -337,6 +358,7 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--accent-text-color);
+  margin-top: 20px;
 }
 
 .cards-item {
@@ -344,6 +366,11 @@ img {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--accent-too-color);
+  margin-top: 4px;
+}
+
+.card-content {
+  padding: 24px 20px;
 }
 
 .menu-list {
@@ -367,16 +394,18 @@ img {
   display: flex;
   flex-wrap: wrap;
 
-  margin-left: -30px;
-  margin-top: -30px;
+  margin-left: calc(-1 * var(--card-set-gap));
+  margin-top: calc(-1 * var(--card-set-gap));
+
+  overflow: hidden;
 }
 
 .menu-cards > .item {
   outline: 1px solid #eeeeee;
-  flex-basis: calc(100% / 3 - 30px);
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
 
-  margin-left: 30px;
-  margin-top: 30px;
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
 }
 
 /* =========== And Portfolio ============== */
