@@ -76,13 +76,7 @@ img {
 
 .navigation-list {
   display: flex;
-  justify-content: flex-end;
-}
-
-.list {
-  display: flex;
-  padding-top: 
-  padding-bottom: 
+  justify-content: center;
 }
 
 .navigation-link:hover,
@@ -101,14 +95,11 @@ img {
   line-height: 1.1;
   letter-spacing: 0.02em;
   color: var(--accent-too-color);
-   
 }
 
-
-
 .tel-list {
- 
-  
+  display: block;
+  margin-left: 50px;
 }
 
 .tel-link:hover,
@@ -138,12 +129,14 @@ img {
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.header .container { 
+/*-----.header .container {
   display: flex;
   align-items: center;
-}
+}-----*/
 
 .container {
   margin-left: auto;
@@ -215,6 +208,15 @@ img {
   padding-top: 94px;
 }
 
+.lessons-pictures:not(:last-child) {
+  margin-right: 30px;
+}
+
+.fio {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
 /* =============== AND FEATURES ================= */
 
 .components {
@@ -224,7 +226,6 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--accent-text-color);
-    
 }
 
 .rush-team {
@@ -234,6 +235,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--accent-text-color);
+  width: 151px;
 }
 
 .profession {
@@ -243,14 +245,13 @@ img {
   letter-spacing: 0.03em;
   color: var(--accent-too-color);
 }
-.lessons { 
+.lessons {
   padding-bottom: 94px;
   padding-top: 50px;
 }
 .comandos {
   padding-top: 94px;
-  padding-bottom: 50px; 
-  
+  padding-bottom: 50px;
 }
 
 .picture {
@@ -258,9 +259,6 @@ img {
 }
 .block {
   padding-top: 47px;
-}
-.lessons-pictures:not(:last-child) {
-  margin-right: 30px;
 }
 
 /* =============== FUTTER ================= */
@@ -278,8 +276,6 @@ img {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   background: #2f303a;
-  
-  
 }
 
 /*---.footer-black {
@@ -339,7 +335,7 @@ img {
   color: var(--accent-too-color);
 }
 
-.menu-list{
+.menu-list {
   display: flex;
   justify-content: center;
 }
