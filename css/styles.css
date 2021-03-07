@@ -239,6 +239,7 @@ img {
 
 .team {
   display: flex;
+  margin-bottom: 94px;
 }
 
 .fio {
