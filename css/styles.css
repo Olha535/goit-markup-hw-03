@@ -76,7 +76,7 @@ img {
 
 .navigation-list {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 .navigation-link:hover,
@@ -144,6 +144,8 @@ img {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  display: flex;
+  align-items: center;
 }
 
 .hero {
@@ -166,6 +168,7 @@ img {
   cursor: pointer;
   background-color: var(--accent-color);
   color: var(--color-white);
+  min-width: ;
 }
 
 .main-heading {
@@ -235,7 +238,6 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--accent-text-color);
-  width: 151px;
 }
 
 .profession {
@@ -297,6 +299,14 @@ img {
   color: var(--color-white);
 }
 
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+/*----.address {
+  margin-bottom: 20px;
+}---*/
+
 /* =============== AND FUTTER ============= */
 
 /* =============== Portfolio ============== */
@@ -312,6 +322,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--accent-text-color);
   background-color: var(--color-white);
+  cursor: pointer;
 }
 
 .content-btn:hover,
@@ -344,7 +355,28 @@ img {
   margin-right: 8px;
 }
 
-.address-item:not(:last-child) {
-  margin-bottom: 9px;
+.menu-item {
+  cursor: pointer;
 }
+.menu-cards {
+  outline: 1px solid #eeeeee;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.menu-cards > .item {
+  outline: 1px solid #eeeeee;
+  flex-basis: calc(100% / 3 - 30px);
+
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
 /* =========== And Portfolio ============== */
