@@ -83,8 +83,12 @@ img {
 
 .navigation-list {
   display: flex;
-  align-items: center;
   margin-left: auto;
+  align-items: center;
+}
+
+.tel-list:not(:last-child) {
+  margin-right: 50px;
 }
 
 .navigation-link:hover,
@@ -107,7 +111,7 @@ img {
 
 .tel-list {
   display: block;
-  margin-left: 50px;
+  /*----margin-left: 50px;----*/
 }
 
 .tel-link:hover,
@@ -236,14 +240,11 @@ img {
   margin-right: 30px;
 }
 
-.picture {
-}
-
-.lessons {
-  /*--- justify-content: space-between; ---*/
+/*------.lessons {
+  /*--- justify-content: space-between; 
   padding-bottom: 94px;
   padding-top: 50px;
-}
+}---*/
 
 .services {
   display: flex;
@@ -254,8 +255,16 @@ img {
 }
 
 .fio {
-  margin-top: 30px;
-  margin-bottom: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: #ffffff;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  /*---margin-top: 30px;
+  margin-bottom: 10px;----*/
 }
 
 .styless {
@@ -281,6 +290,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--accent-text-color);
+  margin-bottom: 10px;
 }
 
 .profession {
@@ -289,8 +299,6 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--accent-too-color);
-
-  padding-bottom: 30px;
 }
 
 .team-comando {
@@ -324,7 +332,6 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--color-white);
-  margin-top: 20px;
   margin-bottom: 9px;
 }
 
@@ -361,6 +368,21 @@ img {
 
 .address-item:not(:last-child) {
   margin-bottom: 9px;
+}
+
+.address-item {
+  font-style: normal;
+}
+
+.logo-contact {
+  font-family: var(--secondari-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-text-color);
+  margin-bottom: 20px;
+  font-style: normal;
 }
 
 /*----.address {
@@ -405,7 +427,6 @@ img {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--accent-too-color);
-  margin-top: 4px;
 }
 
 .card-content {
@@ -428,7 +449,6 @@ img {
   border-radius: 4px;
 }
 .menu-cards {
-  outline: 1px solid #eeeeee;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -443,7 +463,6 @@ img {
 }
 
 .menu-cards > .item {
-  outline: 1px solid #eeeeee;
   flex-basis: calc(100% / 3 - var(--card-set-gap));
 
   margin-left: var(--card-set-gap);
